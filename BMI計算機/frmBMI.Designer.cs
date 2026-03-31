@@ -37,9 +37,9 @@
             this.grpOutput = new System.Windows.Forms.GroupBox();
             this.lblResult = new System.Windows.Forms.Label();
             this.lblBMI = new System.Windows.Forms.Label();
-            this.grpOutput2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblRange = new System.Windows.Forms.Label();
+            this.grpOutput2 = new System.Windows.Forms.GroupBox();
             this.grpInput.SuspendLayout();
             this.grpOutput.SuspendLayout();
             this.grpOutput2.SuspendLayout();
@@ -150,22 +150,9 @@
             this.lblBMI.TabIndex = 2;
             this.lblBMI.Text = "身體質量指數(BMI)";
             // 
-            // grpOutput2
-            // 
-            this.grpOutput2.BackColor = System.Drawing.Color.Thistle;
-            this.grpOutput2.Controls.Add(this.lblRange);
-            this.grpOutput2.Controls.Add(this.label1);
-            this.grpOutput2.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.grpOutput2.Location = new System.Drawing.Point(32, 326);
-            this.grpOutput2.Name = "grpOutput2";
-            this.grpOutput2.Size = new System.Drawing.Size(383, 113);
-            this.grpOutput2.TabIndex = 1;
-            this.grpOutput2.TabStop = false;
-            this.grpOutput2.Text = "理想體重計算";
-            // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Plum;
+            this.label1.BackColor = System.Drawing.Color.LightSalmon;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Location = new System.Drawing.Point(133, 46);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -183,6 +170,19 @@
             this.lblRange.Size = new System.Drawing.Size(112, 22);
             this.lblRange.TabIndex = 3;
             this.lblRange.Text = "健康體重範圍";
+            // 
+            // grpOutput2
+            // 
+            this.grpOutput2.BackColor = System.Drawing.Color.MistyRose;
+            this.grpOutput2.Controls.Add(this.lblRange);
+            this.grpOutput2.Controls.Add(this.label1);
+            this.grpOutput2.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.grpOutput2.Location = new System.Drawing.Point(32, 326);
+            this.grpOutput2.Name = "grpOutput2";
+            this.grpOutput2.Size = new System.Drawing.Size(383, 113);
+            this.grpOutput2.TabIndex = 1;
+            this.grpOutput2.TabStop = false;
+            this.grpOutput2.Text = "理想體重計算";
             // 
             // frmBMI
             // 
@@ -217,9 +217,9 @@
         private System.Windows.Forms.TextBox txtWeight;
         private System.Windows.Forms.TextBox txtHeight;
         private System.Windows.Forms.Button btnRun;
-        private System.Windows.Forms.GroupBox grpOutput2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblRange;
+        private System.Windows.Forms.GroupBox grpOutput2;
     }
 }
 
