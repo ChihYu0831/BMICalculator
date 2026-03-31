@@ -50,11 +50,11 @@ namespace BMI計算機
             }
 
             // 將身高從公分轉換為公尺
-            height = height / 100;
+            double heightInMeter = height / 100;
             // 計算BMI
-            double bmi = weight / (height * height);
+            double bmi = weight / (heightInMeter * heightInMeter);
 
-            string[] strResultList = { "體重過輕", "健康體位", "體位過重", "輕度肥胖", "中度肥胖", "重度肥胖"};
+            string[] strResultList = { "體重過輕", "健康體位", "體位過重", "輕度肥胖", "中度肥胖", "重度肥胖" };
             Color[] colorList = { Color.Blue, Color.Green, Color.Orange, Color.DarkOrange, Color.Red, Color.Purple };
 
             string strResult = "";
@@ -64,18 +64,23 @@ namespace BMI計算機
             {
                 resultIndex = 0;
             }
-            else if(bmi < 24) {
+            else if (bmi < 24)
+            {
                 resultIndex = 1;
             }
-            else if(bmi < 27) {
+            else if (bmi < 27)
+            {
                 resultIndex = 2;
             }
-            else if(bmi < 30) {
+            else if (bmi < 30)
+            {
                 resultIndex = 3;
             }
-            else if(bmi < 35) {
+            else if (bmi < 35)
+            {
                 resultIndex = 4;
-            } else
+            }
+            else
             {
                 resultIndex = 5;
             }
@@ -83,8 +88,16 @@ namespace BMI計算機
             strResult = strResultList[resultIndex];
             colorResult = colorList[resultIndex];
 
+            // 顯示原本的 BMI 運算結果
             lblResult.Text = $"{bmi:F2}({strResult})";
             lblResult.BackColor = colorResult;
+
+            // 計算理想體重範圍 (BMI 18.5 ~ 24 間的體重)
+            double minIdealWeight = 18.5 * (heightInMeter * heightInMeter);
+            double maxIdealWeight = 24.0 * (heightInMeter * heightInMeter);
+
+            // 將理想體重結果放入設計師新增的 label1 標籤
+            label1.Text = $" {minIdealWeight:F1}kg - {maxIdealWeight:F1}kg";
 
         }
     }

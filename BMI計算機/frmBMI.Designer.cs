@@ -37,8 +37,12 @@
             this.grpOutput = new System.Windows.Forms.GroupBox();
             this.lblResult = new System.Windows.Forms.Label();
             this.lblBMI = new System.Windows.Forms.Label();
+            this.grpOutput2 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblRange = new System.Windows.Forms.Label();
             this.grpInput.SuspendLayout();
             this.grpOutput.SuspendLayout();
+            this.grpOutput2.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpInput
@@ -49,11 +53,11 @@
             this.grpInput.Controls.Add(this.txtHeight);
             this.grpInput.Controls.Add(this.lblWeight);
             this.grpInput.Controls.Add(this.lblHeight);
-            this.grpInput.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.grpInput.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.grpInput.Location = new System.Drawing.Point(32, 15);
-            this.grpInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpInput.Margin = new System.Windows.Forms.Padding(4);
             this.grpInput.Name = "grpInput";
-            this.grpInput.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpInput.Padding = new System.Windows.Forms.Padding(4);
             this.grpInput.Size = new System.Drawing.Size(383, 125);
             this.grpInput.TabIndex = 0;
             this.grpInput.TabStop = false;
@@ -64,7 +68,7 @@
             this.btnRun.AllowDrop = true;
             this.btnRun.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnRun.Location = new System.Drawing.Point(263, 36);
-            this.btnRun.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRun.Margin = new System.Windows.Forms.Padding(4);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(88, 69);
             this.btnRun.TabIndex = 5;
@@ -76,18 +80,18 @@
             // 
             this.txtWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtWeight.Location = new System.Drawing.Point(105, 74);
-            this.txtWeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtWeight.Margin = new System.Windows.Forms.Padding(4);
             this.txtWeight.Name = "txtWeight";
-            this.txtWeight.Size = new System.Drawing.Size(133, 29);
+            this.txtWeight.Size = new System.Drawing.Size(133, 30);
             this.txtWeight.TabIndex = 4;
             // 
             // txtHeight
             // 
             this.txtHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHeight.Location = new System.Drawing.Point(105, 36);
-            this.txtHeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHeight.Margin = new System.Windows.Forms.Padding(4);
             this.txtHeight.Name = "txtHeight";
-            this.txtHeight.Size = new System.Drawing.Size(133, 29);
+            this.txtHeight.Size = new System.Drawing.Size(133, 30);
             this.txtHeight.TabIndex = 3;
             // 
             // lblWeight
@@ -115,11 +119,11 @@
             this.grpOutput.BackColor = System.Drawing.SystemColors.Info;
             this.grpOutput.Controls.Add(this.lblResult);
             this.grpOutput.Controls.Add(this.lblBMI);
-            this.grpOutput.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.grpOutput.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.grpOutput.Location = new System.Drawing.Point(32, 172);
-            this.grpOutput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpOutput.Margin = new System.Windows.Forms.Padding(4);
             this.grpOutput.Name = "grpOutput";
-            this.grpOutput.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpOutput.Padding = new System.Windows.Forms.Padding(4);
             this.grpOutput.Size = new System.Drawing.Size(383, 125);
             this.grpOutput.TabIndex = 0;
             this.grpOutput.TabStop = false;
@@ -146,14 +150,49 @@
             this.lblBMI.TabIndex = 2;
             this.lblBMI.Text = "身體質量指數(BMI)";
             // 
+            // grpOutput2
+            // 
+            this.grpOutput2.BackColor = System.Drawing.Color.Thistle;
+            this.grpOutput2.Controls.Add(this.lblRange);
+            this.grpOutput2.Controls.Add(this.label1);
+            this.grpOutput2.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.grpOutput2.Location = new System.Drawing.Point(32, 326);
+            this.grpOutput2.Name = "grpOutput2";
+            this.grpOutput2.Size = new System.Drawing.Size(383, 113);
+            this.grpOutput2.TabIndex = 1;
+            this.grpOutput2.TabStop = false;
+            this.grpOutput2.Text = "理想體重計算";
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Plum;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Location = new System.Drawing.Point(133, 46);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(218, 29);
+            this.label1.TabIndex = 2;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblRange
+            // 
+            this.lblRange.AutoSize = true;
+            this.lblRange.Location = new System.Drawing.Point(13, 49);
+            this.lblRange.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRange.Name = "lblRange";
+            this.lblRange.Size = new System.Drawing.Size(112, 22);
+            this.lblRange.TabIndex = 3;
+            this.lblRange.Text = "健康體重範圍";
+            // 
             // frmBMI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(440, 318);
+            this.ClientSize = new System.Drawing.Size(445, 470);
+            this.Controls.Add(this.grpOutput2);
             this.Controls.Add(this.grpOutput);
             this.Controls.Add(this.grpInput);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBMI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BMI計算機";
@@ -161,6 +200,8 @@
             this.grpInput.PerformLayout();
             this.grpOutput.ResumeLayout(false);
             this.grpOutput.PerformLayout();
+            this.grpOutput2.ResumeLayout(false);
+            this.grpOutput2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -176,6 +217,9 @@
         private System.Windows.Forms.TextBox txtWeight;
         private System.Windows.Forms.TextBox txtHeight;
         private System.Windows.Forms.Button btnRun;
+        private System.Windows.Forms.GroupBox grpOutput2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblRange;
     }
 }
 
