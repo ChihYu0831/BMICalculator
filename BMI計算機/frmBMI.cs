@@ -97,7 +97,7 @@ namespace BMI計算機
             double maxIdealWeight = 24.0 * (heightInMeter * heightInMeter);
 
             // 將理想體重結果放入設計師新增的 label1 標籤
-            label1.Text = $" {minIdealWeight:F1}kg - {maxIdealWeight:F1}kg";
+            label1.Text = $"{minIdealWeight:F1}kg - {maxIdealWeight:F1}kg";
 
         }
     }
